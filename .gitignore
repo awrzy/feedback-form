@@ -1,0 +1,21 @@
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Настройки IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Логи и кэш
+*.log
+*.cache
+
+# Временные файлы Open Server
+.osp/logs/
+.osp/tmp/
+.osp/proc/
