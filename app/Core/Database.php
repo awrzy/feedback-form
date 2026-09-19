@@ -17,7 +17,7 @@ class Database
             $config = require __DIR__ . '/config.php';
             $db = $config['db'];
 
-            $dsn = 'mysql:host=MySQL-8.4;dbname=feedback_db;charset=utf8mb4';
+            $dsn = "mysql:host={$db['host']};port={$db['port']};dbname={$db['dbname']};charset={$db['charset']}";
 
             try {
                 self::$instance = new PDO($dsn, $db['user'], $db['password'], [
